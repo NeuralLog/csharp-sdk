@@ -4,7 +4,23 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Version>1.0.0</Version>
+    <Authors>NeuralLog Team</Authors>
+    <Company>NeuralLog</Company>
+    <Description>C# SDK for NeuralLog - A logging system for AI applications</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/NeuralLog/csharp-sdk</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/NeuralLog/csharp-sdk</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>logging;ai;sdk;neurallog</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Text.Json" Version="9.0.4" />
