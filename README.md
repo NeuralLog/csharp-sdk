@@ -70,7 +70,7 @@ var config = new NeuralLogConfig
     // Required settings
     ServerUrl = "https://logs.example.com",
     Namespace = "production",
-    
+
     // Optional settings
     ApiKey = "your-api-key",
     BatchSize = 100,
@@ -79,11 +79,11 @@ var config = new NeuralLogConfig
     RetryBackoffMs = 1000,
     AsyncEnabled = true,
     DebugEnabled = false,
-    
+
     // HTTP client settings
     Timeout = TimeSpan.FromSeconds(30),
     MaxConnections = 10,
-    
+
     // Custom HTTP headers
     Headers = new Dictionary<string, string>
     {
@@ -165,6 +165,30 @@ dotnet build
 # Run the tests
 dotnet test
 ```
+
+## Documentation
+
+Detailed documentation is available in the [docs](./docs) directory:
+
+- [API Reference](./docs/api.md)
+- [Configuration](./docs/configuration.md)
+- [Architecture](./docs/architecture.md)
+- [Examples](./docs/examples)
+
+For integration guides and tutorials, visit the [NeuralLog Documentation Site](https://neurallog.github.io/docs/).
+
+## Contributing
+
+Contributions are welcome! Please read our [Contributing Guide](./CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## Related NeuralLog Components
+
+- [NeuralLog Auth](https://github.com/NeuralLog/auth) - Authentication and authorization
+- [NeuralLog Server](https://github.com/NeuralLog/server) - Core server functionality
+- [NeuralLog Web](https://github.com/NeuralLog/web) - Web interface components
+- [NeuralLog TypeScript Client SDK](https://github.com/NeuralLog/typescript-client-sdk) - TypeScript client SDK
+- [NeuralLog Java Client SDK](https://github.com/NeuralLog/Java-client-sdk) - Java client SDK
+- [NeuralLog Python SDK](https://github.com/NeuralLog/python) - Python SDK
 
 ## License
 
